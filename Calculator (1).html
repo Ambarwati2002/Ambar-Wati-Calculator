@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="calculator">
+			<form name="Calculator" class = "calculator" >
+				<input type="text" class="input" name="Input">
+			</from>
+			<table>
+				<tr>
+					<td><input type="button" class = "button" value=" C "OnClick="Calculator.Input.value = ''"></td>
+					<td><input type="button" class = "button del" value=" Del "OnClick="Calculator.Input.value = ''"></td>
+					<td><input type="button" class = "button" value=" x " OnClick="Calculator.Input.value += '*'"></td>
+					<td><input type="button" class = "button" value=" / " OnClick="Calculator.Input.value += '/'"></td>
+				</tr>
+				<tr>
+					<td><input type="button" class = "button" value=" 1 " OnClick="Calculator.Input.value += '1'"></td>
+					<td><input type="button" class = "button" value=" 2 " OnClick="Calculator.Input.value += '2'"></td>
+					<td><input type="button" class = "button" value=" 3 " OnClick="Calculator.Input.value += '3'"></td>
+					<td><input type="button" class= "button" value=" - " OnClick="Calculator.Input.value += '-'"></td>
+				</tr>
+				<tr>
+					<td><input type="button" class = "button" value=" 4 " OnClick="Calculator.Input.value += '4'"></td>
+					<td><input type="button" class = "button" value=" 5 " OnClick="Calculator.Input.value += '5'"></td>
+					<td><input type="button" class = "button" value=" 6 " OnClick="Calculator.Input.value += '6'"></td>
+					<td><input type="button" class = "button" value=" + " OnClick="Calculator.Input.value += '+'"></td>
+				</tr>
+				<tr>
+					<td><input type="button" class = "button" value=" 7 " OnClick="Calculator.Input.value += '7'"></td>
+					<td><input type="button" class = "button" value=" 8 " OnClick="Calculator.Input.value += '8'"></td>
+					<td><input type="button" class = "button" value=" 9 " OnClick="Calculator.Input.value += '9'"></td>
+					<td rowspan="2"><input type="button" class = "button equal" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="button" class = "button zero" value=" 0 " OnClick="Calculator.Input.value += '0'"></td>
+					<td><input type="button" class = "button" value=" . " OnClick="Calculator.Input.value += '.'"></td>
+				</tr>
+				<style>
+					*{
+						margin: 0;
+						padding: 0;
+					}
+
+					.wrapper{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+					}
+
+					.calculator{
+						background: blue;
+						padding: 10px;
+						border-radius: 10px;
+					}
+
+					.input{
+						width: 180px;
+						font-size: 22px;
+						font-weight: bold;
+						padding: 3px;
+					}
+
+					.input{
+
+					}
+
+					.button{
+						width: 40px;
+						height: 30px;
+						font-size: 20px;
+						margin: 3px;
+						border-radius: 5px;
+						cursor: pointer;
+						cursor: pointer;0px 3px #fdfd;	
+					}
+
+					button:hover{
+						box-shadow: 0px 0px 3px black;
+					}
+
+					.equal{
+						height: 90px;
+					}
+
+					.equal:hover{
+						background: blue;
+						color: white;
+					}
+
+					.del:hover{
+						background: red;
+						color: white;
+					}
+
+					.zero{
+						width: 90px;
+					}
+				<style>
+			<table>	
+		</div>
+	</div>	
+</body>
+</html>
